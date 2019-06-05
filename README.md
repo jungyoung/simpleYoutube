@@ -10,7 +10,7 @@ User case
 1.key setting
 <pre>
 <code>
-simpleYoutube.setKey('Your api key');
+SimpleYoutube.setKey('Your api key');
 </code>
 </pre>
 
@@ -18,19 +18,19 @@ simpleYoutube.setKey('Your api key');
 2.Get list (max 50 rows)
 <pre>
 <code>
-simpleYoutube.query('search query', callback function);
+SimpleYoutube.query('search query', callback function);
 </code>
 </pre>
 
 ex)
 <pre>
 <code>
-simpleYoutube.query('pinkpong', function(response) {
+SimpleYoutube.query('pinkpong', function(response) {
     // orignal data : response
     console.log(response);
     
     // Extract only video codes, titles, and images
-    console.log(simpleYoutube.fetchList(response));
+    console.log(SimpleYoutube.fetchList(response));
 });
 </code>
 </pre>
@@ -39,8 +39,8 @@ simpleYoutube.query('pinkpong', function(response) {
 2.Next 50 list (You must use "promise" or "setTimeout" immediately after simpleYoutube.query)
 <pre>
 <code>
-simpleYoutube.search.next(function(response) {
-    console.log(simpleYoutube.search.fetchList(response));
+SimpleYoutube.search.next(function(response) {
+    console.log(SimpleYoutube.search.fetchList(response));
 });
 </code>
 </pre>
