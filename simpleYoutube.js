@@ -1,4 +1,4 @@
-        var simpleYoutube = (function() {
+        var SimpleYoutube = (function() {
             'use strict';
 
             // 글로벌 변수
